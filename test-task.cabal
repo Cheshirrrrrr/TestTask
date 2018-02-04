@@ -1,0 +1,27 @@
+name:                test-task
+version:             0.1.0.0
+synopsis:            Test Task
+description:         Test Task
+
+homepage:            https://github.com/Cheshirrrrrr/TestTask#readme
+license:             MIT
+license-file:        LICENSE
+author:              sofya
+maintainer:          cheshirrrrrr@yandex.ru
+copyright:           2018 sofya
+
+category:            Web
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src 
+  exposed-modules:     Main
+  ghc-options:         -Wall
+  build-depends:       base >= 4.9 && < 5
+                     , hasbolt
+                     , text
+                     , data-default
+                     , neat-interpolation
+  default-language:    Haskell2010
